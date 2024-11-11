@@ -1,6 +1,17 @@
+:root {
+  --color-text: #434455;
+  --color-primary: #2e2f42;
+  --color-secondary: #404bbf;
+  --color-accent: #4d5ae5;
+  --color-light: #f4f4fd;
+  --color-white: #ffffff;
+}
+
+/*#region Normalization */
 body {
-  font-family: "Roboto", sans-serif;
-  color: #434455;
+  font-family: "Roboto", "Open Sans", "Lato", "Helvetica Neue", "Arial",
+    sans-serif;
+  color: var(--color-text);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -14,57 +25,71 @@ a {
   text-decoration: none;
   font-style: normal;
 }
+/*#endregion*/
 
-.main-title {
-  color: #ffffff;
-  font-weight: bold;
+/* Titles h1, h2, h3 */
+.top-banner-title {
+  color: var(--color-white);
   font-size: 56px;
   line-height: 1.071;
 }
 
 .section-title {
-  color: #2e2f42;
-  font-weight: bold;
+  color: var(--color-primary);
   font-size: 36px;
 }
 
 .list-title {
-  color: #2e2f42;
-  font-weight: medium;
+  color: var(--color-primary);
+  font-weight: 500;
   font-size: 20px;
 }
 
-.navigation {
-  font-weight: medium;
-  color: #2e2f42;
+/* Head */
+.navigation-item {
+  font-weight: 500;
+  color: var(--color-primary);
 }
 
-.address .address-item {
+.navigation-item:hover,
+.navigation-item:focus,
+.navigation-item:active {
+  color: var(--color-secondary);
+}
+
+.navigation-item:active {
+  text-decoration: underline;
+}
+
+.address-item {
   color: currentColor;
 }
 
-.address a:hover {
-  color: #404bbf;
+.address-item:hover,
+.address-item:focus {
+  color: var(--color-secondary);
 }
 
+/* Top Banner */
 .top-banner {
-  background-color: #2e2f42;
+  background-color: var(--color-primary);
 }
 
 .top-banner-button {
-  font-weight: medium;
+  font-weight: 500;
   letter-spacing: 0.04em;
-  background-color: #4d5ae5;
+  background-color: var(--color-accent);
   cursor: pointer;
 }
 
 .top-banner-button:hover {
-  background-color: #404bbf;
+  background-color: var(--color-secondary);
 }
 
+/* Logo */
 .logo {
   font-family: "Raleway", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 1.167;
   letter-spacing: 0.03em;
@@ -72,17 +97,22 @@ a {
 }
 
 .logo .logo-left {
-  color: #4d5ae5;
+  color: var(--color-accent);
 }
 
-.logo .logo-right {
-  color: #f4f4fd;
+.logo .logo-right-top {
+  color: var(--color-primary);
 }
 
+.logo .logo-right-footer {
+  color: var(--color-light);
+}
+
+/* Footer */
 .footer {
-  background-color: #2e2f42;
+  background-color: var(--color-primary);
 }
 
 .footer-description {
-  color: #f4f4fd;
+  color: var(--color-light);
 }
