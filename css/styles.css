@@ -9,8 +9,8 @@
 
 /*#region Normalization */
 body {
-  font-family: "Roboto", "Open Sans", "Lato", "Helvetica Neue", "Arial",
-    sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color-white);
   color: var(--color-text);
   font-size: 16px;
   line-height: 1.5;
@@ -27,22 +27,39 @@ a {
 }
 /*#endregion*/
 
+.text {
+  color: var(--color-text);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
 /* Titles h1, h2, h3 */
 .top-banner-title {
   color: var(--color-white);
   font-size: 56px;
-  line-height: 1.071;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
 }
 
 .section-title {
   color: var(--color-primary);
   font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 
 .list-title {
   color: var(--color-primary);
   font-weight: 500;
   font-size: 20px;
+  line-height: 1.12;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 
 /* Head */
@@ -61,6 +78,10 @@ a {
   text-decoration: underline;
 }
 
+.address {
+  font-style: normal;
+}
+
 .address-item {
   color: currentColor;
 }
@@ -76,14 +97,18 @@ a {
 }
 
 .top-banner-button {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   letter-spacing: 0.04em;
   color: var(--color-white);
   background-color: var(--color-accent);
   cursor: pointer;
+  line-height: 1.5;
 }
 
-.top-banner-button:hover {
+.top-banner-button:hover,
+.top-banner-button:active,
+.top-banner-button:focus {
   background-color: var(--color-secondary);
 }
 
@@ -92,12 +117,9 @@ a {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.167;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-
-.logo .logo-left {
   color: var(--color-accent);
 }
 
@@ -107,6 +129,15 @@ a {
 
 .logo .logo-right-footer {
   color: var(--color-light);
+}
+
+/* Team */
+.section-team {
+  background-color: var(--color-light);
+}
+
+.team-item {
+  background-color: var(--color-white);
 }
 
 /* Footer */
